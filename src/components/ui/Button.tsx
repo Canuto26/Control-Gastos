@@ -1,7 +1,7 @@
 // components/ui/Button.tsx
 import React from 'react';
 
-export type ButtonVariant = 'primario' | 'secundario' | 'peligro' | 'exito' | 'info' | 'texto';
+export type ButtonVariant = 'primario' | 'secundario' | 'peligro' | 'exito' | 'info' | 'texto' | 'advertencia' | 'gris';
 export type ButtonSize = 'sm' | 'md' | 'lg';
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {

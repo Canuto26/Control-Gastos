@@ -1,7 +1,7 @@
 // components/ui/ConfirmModal.tsx
 import React from 'react';
-import { Modal } from './Modal';
-import { Button } from './Button';
+import { Modal } from '../ui/Modal';
+import { Button } from '../ui/Button';
 
 export type ConfirmVariant = 'peligro' | 'advertencia' | 'info' | 'exito';
 

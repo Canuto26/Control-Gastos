@@ -1,6 +1,6 @@
 // components/gastos/GastoRow.tsx
 import React, { useState } from 'react';
-import { Gasto } from '../../types';
+import type { Gasto } from '../../types';
 
 interface GastoRowProps {
   gasto: Gasto;

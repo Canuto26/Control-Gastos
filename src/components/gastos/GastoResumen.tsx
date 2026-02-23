@@ -72,7 +72,7 @@ export const GastoResumen: React.FC<GastoResumenProps> = ({
               className={`barra-progreso-llenado ${getPorcentajeColor()}`}
               style={{ width: `${Math.min(porcentajeUsado || 0, 100)}%` }}
               role="progressbar"
-              aria-valuenow={porcentajeUsado || 0}
+              aria-valuenow={porcentajeUsado ?? 0}
               aria-valuemin={0}
               aria-valuemax={100}
             >

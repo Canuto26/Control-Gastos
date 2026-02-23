@@ -1,6 +1,6 @@
 // components/categorias/CategoriaItem.tsx
 import React from 'react';
-import { Categoria } from '../../types';
+import type { Categoria } from '../../types';
 
 interface CategoriaItemProps {
   categoria: Categoria;

@@ -6,13 +6,13 @@ import { CategoriaForm } from './components/categorias/CategoriaForm';
 import { CategoriaList } from './components/categorias/CategoriaList';
 import { GastoForm } from './components/gastos/GastoForm';
 import { GastoTable } from './components/gastos/GastoTable';
-import { ConfirmModal } from './components/ui/ConfirmModal';
-import { LoadingSpinner } from './components/ui/LoadingSpinner';
+import { ConfirmModal } from './components/shared/ConfirmModal';
+import { LoadingSpinner } from './components/shared/LoadingSpinner';
 import { Badge } from './components/ui/Badge';
 import { Button } from './components/ui/Button';
 
 // Types
-import { Gasto, GastoFormData, Categoria } from './types';
+import type { Gasto, GastoFormData, Categoria } from './types';
 
 // Servicios y hooks
 import { useCategorias } from './services/categoriaService';

@@ -1,6 +1,6 @@
 // components/layout/Header.tsx
 import React from 'react';
-import { useGastos } from '../../hooks/useGastos';
+
 
 interface HeaderProps {
   totalGeneral: number;

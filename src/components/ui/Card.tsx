@@ -53,7 +53,7 @@ export const Card: React.FC<CardProps> = ({
     <div
       className={cardClasses}
       onClick={onClick}
-      role={onClick ? 'button' : undefined}
+      role="button"
       tabIndex={onClick ? 0 : undefined}
       onKeyDown={onClick ? (e) => {
         if (e.key === 'Enter' || e.key === ' ') {

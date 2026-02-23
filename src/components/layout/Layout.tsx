@@ -156,7 +156,7 @@ if (typeof document !== 'undefined') {
 }
 
 // Hook para mostrar/ocultar el botón scroll to top
-export const useScrollToTop = () => {
+const useScrollToTop = () => {
   const [isVisible, setIsVisible] = React.useState(false);
 
   React.useEffect(() => {
@@ -184,4 +184,9 @@ export const useScrollToTop = () => {
   }, [isVisible]);
 
   return isVisible;
+};
+
+export const BotonScroll = () => {
+  const isVisible = useScrollToTop();
+  return isVisible ? <button>Subir</button> : null;
 };

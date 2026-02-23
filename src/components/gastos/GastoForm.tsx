@@ -1,6 +1,6 @@
 // components/gastos/GastoForm.tsx
 import React, { useState, useEffect } from 'react';
-import { GastoFormData, Categoria } from '../../types';
+import type{ GastoFormData, Categoria } from '../../types';
 
 interface GastoFormProps {
   onSubmit: (data: GastoFormData) => Promise<void>;
@@ -38,6 +38,7 @@ export const GastoForm: React.FC<GastoFormProps> = ({
         return '';
       case 'monto':
         if (!value) return 'El monto es requerido';
+        
         const montoNum = Number(value);
         if (isNaN(montoNum)) return 'Debe ser un número válido';
         if (montoNum <= 0) return 'El monto debe ser positivo';

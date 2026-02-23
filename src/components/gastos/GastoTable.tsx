@@ -1,6 +1,6 @@
 // components/gastos/GastoTable.tsx
 import React from 'react';
-import { Gasto } from '../../types';
+import type { Gasto } from '../../types';
 import { GastoRow } from './GastoRow';
 
 interface GastoTableProps {

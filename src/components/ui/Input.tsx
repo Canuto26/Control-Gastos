@@ -1,5 +1,5 @@
 // components/ui/Input.tsx
-import React, { forwardRef, useState } from 'react';
+import React, { forwardRef, useState, useId } from 'react';
 
 export type InputVariant = 'default' | 'error' | 'success' | 'warning';
 export type InputSize = 'sm' | 'md' | 'lg';
@@ -36,7 +36,7 @@ export const Input = forwardRef<HTMLInputElement, InputProps>(({
   ...props
 }, ref) => {
   const [showPassword, setShowPassword] = useState(false);
-  const inputId = id || `input-${Math.random().toString(36).substr(2, 9)}`;
+  const inputId = id || useId();
 
   const isPassword = type === 'password';
   const inputType = isPassword && showPassword ? 'text' : type;
@@ -90,7 +90,7 @@ export const Input = forwardRef<HTMLInputElement, InputProps>(({
           className={inputClasses}
           disabled={disabled}
           required={required}
-          aria-invalid={!!error}
+          aria-invalid={error ? 'true' : 'false'}
           aria-describedby={
             error ? `${inputId}-error` : hint ? `${inputId}-hint` : undefined
           }
